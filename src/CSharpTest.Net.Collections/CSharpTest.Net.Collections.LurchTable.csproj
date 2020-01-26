@@ -1,0 +1,129 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <RootNamespace>CSharpTest.Net</RootNamespace>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyTitle>CSharpTest.Net.Collections.dll</AssemblyTitle>
+    <Company>CSharpTest.Net.Collections (http://CSharpTest.Net/)</Company>
+    <Product></Product>
+    <Description>Fully managed B+ Tree implementation for local data storage; ported to .NET Standard 2.0. Forked from: https://github.com/csharptest/CSharpTest.Net.Collections.</Description>
+    <Copyright>Copyright 2009 by Roger Knapp, Licensed under the Apache License, Version 2.0</Copyright>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <DocumentationFile>bin\$(AssemblyName).XML</DocumentationFile>
+    <OutputPath>bin\</OutputPath>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <ErrorReport>none</ErrorReport>
+    <DebugType>pdbonly</DebugType>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/mamift/CSharpTest.Net.Collections/</PackageProjectUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/mamift/CSharpTest.Net.Collections/</RepositoryUrl>
+    <PackageTags>BPlusTree, BTreeDictionary, BTreeList, LurchTable, MergeSort, OrderedEnumeration, OrdinalList</PackageTags>
+    <PackageReleaseNotes>Same as v14.906.1403.1082, but ported to .NET Standard 2.0 (this version is marked as 14.906.1403.1083).</PackageReleaseNotes>
+    <AssemblyVersion>14.906.1403.1083</AssemblyVersion>
+    <FileVersion>14.906.1403.1083</FileVersion>
+    <PackageId>CSharpTest.Net.Collections-NetStd2</PackageId>
+    <Authors>Roger Knapp</Authors>
+    <Version>14.906.1403.1084</Version>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Collections\BPlusTree.cs" />
+    <Compile Remove="Collections\BPlusTree.Options.cs" />
+    <Compile Remove="Collections\BPlusTree.Debug.cs" />
+    <Compile Remove="Collections\Element.cs" />
+    <Compile Remove="Collections\Interfaces.cs" />
+    <Compile Remove="Collections\DisposingList.cs" />
+    <Compile Remove="Collections\KeyValueComparer.cs" />
+    <Compile Remove="Collections\Enumerator.cs" />
+    <Compile Remove="Collections\Node.cs" />
+    <Compile Remove="Collections\MergeSort.cs" />
+    <Compile Remove="Collections\Node.BulkInsert.cs" />
+    <Compile Remove="Collections\NodeCache.None.cs" />
+    <Compile Remove="Collections\OrderedKeyValuePairs.cs" />
+    <Compile Remove="Collections\NodeCache.Normal.cs" />
+    <Compile Remove="Collections\NodeCache.Full.cs" />
+    <Compile Remove="Collections\NodeTransaction.cs" />
+    <Compile Remove="Collections\OrderedEnumeration.cs" />
+    <Compile Remove="Collections\TransactionLog.cs" />
+    <Compile Remove="Collections\NodeHandle.cs" />
+    <Compile Remove="Collections\SetList.cs" />
+    <Compile Remove="Collections\NodePin.cs" />
+    <Compile Remove="Collections\OrdinalList.cs" />
+    <Compile Remove="Collections\NodeCache.Base.cs" />
+    <Compile Remove="Interfaces\IFactory.cs" />
+    <Compile Remove="Interfaces\DefaultFactories.cs" />
+    <Compile Remove="Interfaces\ICloneable.cs" />
+    <Compile Remove="Interfaces\ITransactable.cs" />
+    <Compile Remove="IO\Crc32.cs" />
+    <Compile Remove="IO\BinaryComparer.cs" />
+    <Compile Remove="IO\AggregateStream.cs" />
+    <Compile Remove="IO\StreamCache.cs" />
+    <Compile Remove="IO\TransactedCompoundFile.cs" />
+    <Compile Remove="IO\TempFile.cs" />
+    <Compile Remove="Serialization\LimitedSerializer.cs" />
+    <Compile Remove="Serialization\ISerializer.cs" />
+    <Compile Remove="Serialization\KeyValueSerializer.cs" />
+    <Compile Remove="Serialization\VariantNumberSerializer.cs" />
+    <Compile Remove="Storage\Storage.Disk.cs" />
+    <Compile Remove="Storage\Storage.DiskV2.cs" />
+    <Compile Remove="Storage\Storage.Cache.cs" />
+    <Compile Remove="Storage\Storage.Memory.cs" />
+    <Compile Remove="Synchronization\ExclusiveLocking.cs" />
+    <Compile Remove="Synchronization\ILockStrategy.cs" />
+    <Compile Remove="Synchronization\IgnoreLocking.cs" />
+    <Compile Remove="Synchronization\WriteLock.cs" />
+    <Compile Remove="Synchronization\SafeLock.cs" />
+    <Compile Remove="Synchronization\WriterOnlyLocking.cs" />
+    <Compile Remove="Synchronization\ReadLock.cs" />
+    <Compile Remove="Synchronization\SimpleReadWriteLocking.cs" />
+    <Compile Remove="Utils\ObjectKeepAlive.cs" />
+    <Compile Remove="Utils\Check.cs" />
+    <Compile Remove="Collections\BPlusTree.OptionsBase.cs" />
+    <Compile Remove="Collections\BTreeDictionary.cs" />
+    <Compile Remove="Collections\BTreeList.cs" />
+    <Compile Remove="Collections\BPlusTree.Recovery.cs" />
+    <Compile Remove="Collections\Node.Insert.cs" />
+    <Compile Remove="Collections\Node.Serialize.cs" />
+    <Compile Remove="Collections\Node.Search.cs" />
+    <Compile Remove="Collections\Node.Delete.cs" />
+    <Compile Remove="IO\FileStreamFactory.cs" />
+    <Compile Remove="IO\IOStream.cs" />
+    <Compile Remove="IO\FragmentedFile.cs" />
+    <Compile Remove="Serialization\PrimitiveSerializer.cs" />
+    <Compile Remove="Synchronization\LockFactory.cs" />
+    <Compile Remove="Synchronization\ReaderWriterLocking.cs" />
+    <Compile Remove="Utils\WeakReference.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resources.resx">
+      <Generator>CmdTool</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LICENSE-2.0.txt" />
+    <Content Include="README.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="IO\" />
+    <Folder Include="Serialization\" />
+    <Folder Include="Storage\" />
+    <Folder Include="Synchronization\" />
+    <Folder Include="Utils\" />
+  </ItemGroup>
+</Project>
